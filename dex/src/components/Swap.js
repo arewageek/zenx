@@ -73,7 +73,7 @@ function Swap(props) {
   }
 
   const fetchPrices = async () => {
-    const response = await axios.get('http://localhost:3001/tokenPrice',{
+    const response = await axios.get('https://zenx-dex.onrender.com/tokenPrice',{
         params: {
           addressOne: tokenOne.address,
           addressTwo: tokenTwo.address,
